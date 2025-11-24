@@ -49,8 +49,8 @@ MIT
 
 ## 🔗 Links
 
-- Live Site: [ethvanity.com](https://www.solvanity.io/)
-- Based on: [profanity2](https://github.com/mcf-rocks/solanity)
+- Live Site: [solvanity.io](https://www.solvanity.io/)
+- Based on: [solanity](https://github.com/mcf-rocks/solanity)
 
 ## 📈 SEO Coverage
 
