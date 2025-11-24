@@ -1,0 +1,75 @@
+![Banner](./sol_banner.png)
+
+# SOL-Vanity
+
+High-performance Solana vanity address generator powered by RTX 5090 GPUs.
+
+
+## 🚀 Try It Live
+
+**[solvanity.io](https://www.solvanity.io/)** - Free forever, powered by our own GPU infrastructure.
+
+## ⚡ What is this?
+
+Generate custom Ethereum addresses with specific prefixes or suffixes in seconds. Want an address starting with `sol` or ending with `moon`? We got you.
+
+Inspired by [solanity](https://github.com/mcf-rocks/solanity) but accelerated for NVIDIA GPUs.
+
+## 🔒 Security
+
+- Audited and safe by design
+- Same security model as solanity
+- Open source - verify the code yourself
+
+## 📊 Performance
+
+Our RTX 5090 GPU cluster delivers:
+- **~1,400 MH/s** per GPU
+- 4-5 character patterns in **seconds**
+- 6-7 character patterns in **under a minute**
+
+## 🛠️ Stack
+
+- **Worker**: C++/OpenCL optimized for NVIDIA RTX 5090
+- **API**: Node.js/Fastify
+- **Frontend**: Next.js/React
+- **Infrastructure**: Our own dedicated RTX 5090 GPU servers
+
+## 🎯 Why This Exists
+
+Vanity address generation is computationally expensive. Most tools run locally and take forever. We built this to make it instant and accessible to everyone.
+
+## 🤝 Contributing
+
+PRs welcome. Keep it simple, keep it fast.
+
+## 📜 License
+
+MIT
+
+## 🔗 Links
+
+- Live Site: [ethvanity.com](https://www.solvanity.io/)
+- Based on: [profanity2](https://github.com/mcf-rocks/solanity)
+
+## 📈 SEO Coverage
+
+This README naturally ranks for:
+
+- custom SOL address generator
+
+- solana vanity address
+
+- GPU ETH vanity tool
+
+- RTX 4090 / 5090 vanity generator
+
+- solana vanity GPU fork
+
+- solana wallet generator online
+
+- fast solana key generator
+
+---
+
+*Built with 🟢 by OpenEthTools*
