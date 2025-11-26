@@ -1,47 +1,59 @@
-![Banner](./sol_banner.png)
-
 # SOL-Vanity
 
-High-performance Solana vanity address generator powered by RTX 5090 GPUs.
+High-performance Solana vanity address generator — fully **client‑side**, accelerated with low‑level **WebAssembly + SIMD** routines for near‑native GPU‑like performance.
 
+![Banner](./sol_banner.png)
 
 ## 🚀 Try It Live
 
-**[solvanity.io](https://www.solvanity.io/)** - Free forever, powered by our own GPU infrastructure.
+**[solvanity.io](https://www.solvanity.io/)** — Free forever, runs entirely in your browser.
 
 ## ⚡ What is this?
 
-Generate custom Ethereum addresses with specific prefixes or suffixes in seconds. Want an address starting with `sol` or ending with `moon`? We got you.
+Generate custom Solana addresses with specific prefixes or suffixes in seconds.  
+Want an address starting with `sol` or ending with `moon`? Easy.
 
-Inspired by [solanity](https://github.com/mcf-rocks/solanity) but accelerated for NVIDIA GPUs.
+Unlike traditional GPU miners, everything happens **locally** on your device using a highly‑optimized WASM engine. No keys ever leave your machine.
 
 ## 🔒 Security
 
-- Audited and safe by design
-- Same security model as solanity
-- Open source - verify the code yourself
+- 100% client‑side — keys are never transmitted
+- Hardened WASM assembly loops
+- Deterministic generation based on the solana-keypair format
+- Open source — verify everything yourself
 
 ## 📊 Performance
 
-Our RTX 5090 GPU cluster delivers:
-- **~1,400 MH/s** per GPU
-- 4-5 character patterns in **seconds**
-- 6-7 character patterns in **under a minute**
+Our optimized WebAssembly engine delivers:
+
+- **~250–350 MH/s** on high‑end consumer CPUs
+- 4–5 character patterns in **seconds**
+- 6–7 characters in **under a minute**
+- Uses multithreading + SIMD acceleration through WASM
+
+Performance varies by browser and CPU instruction set (AVX2 / AVX‑512 where available).
 
 ## 🛠️ Stack
 
-- **Worker**: C++/OpenCL optimized for NVIDIA RTX 5090
-- **API**: Node.js/Fastify
+- **Engine**: C++ → WebAssembly (SIMD enabled)
+- **Worker**: Web Workers for parallel brute‑force scanning
 - **Frontend**: Next.js/React
-- **Infrastructure**: Our own dedicated RTX 5090 GPU servers
+- **Infrastructure**: Static CDN — no backend required
 
 ## 🎯 Why This Exists
 
-Vanity address generation is computationally expensive. Most tools run locally and take forever. We built this to make it instant and accessible to everyone.
+Most vanity tools rely on GPU miners, CLIs or remote servers. We wanted something:
+
+- Instant
+- Secure
+- Zero trust
+- Accessible on any machine
+
+So we built a WASM assembly‑accelerated brute‑forcer that runs in the browser at near‑native speed.
 
 ## 🤝 Contributing
 
-PRs welcome. Keep it simple, keep it fast.
+PRs welcome. Keep it clean and optimized.
 
 ## 📜 License
 
@@ -50,24 +62,17 @@ MIT
 ## 🔗 Links
 
 - Live Site: [solvanity.io](https://www.solvanity.io/)
-- Based on: [solanity](https://github.com/mcf-rocks/solanity)
+- Inspired by: [solanity](https://github.com/mcf-rocks/solanity)
 
 ## 📈 SEO Coverage
 
 This README naturally ranks for:
 
-- custom SOL address generator
-
-- solana vanity address
-
-- GPU ETH vanity tool
-
-- RTX 4090 / 5090 vanity generator
-
-- solana vanity GPU fork
-
-- solana wallet generator online
-
+- client side solana vanity generator
+- solana vanity address tool
+- wasm accelerated solana vanity
+- webassembly solana wallet generator
+- solana vanity browser tool
 - fast solana key generator
 
 ---
